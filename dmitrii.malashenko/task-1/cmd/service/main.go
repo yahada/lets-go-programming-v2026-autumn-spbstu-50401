@@ -6,23 +6,23 @@ func main() {
 	var a, b int
 	var op string
 
-	_, err_a := fmt.Scan(&a)
+	_, errA := fmt.Scan(&a)
 
-	if err_a != nil {
+	if errA != nil {
 		fmt.Println("Invalid first operand")
 		return
 	}
 
-	_, err_b := fmt.Scan(&b)
+	_, errB := fmt.Scan(&b)
 
-	if err_b != nil {
+	if errB != nil {
 		fmt.Println("Invalid second operand")
 		return
 	}
 
-	_, err_op := fmt.Scan(&op)
+	_, errOp := fmt.Scan(&op)
 
-	if err_op != nil {
+	if errOp != nil {
 		fmt.Println("Invalid operation")
 		return
 	}
@@ -44,5 +44,4 @@ func main() {
 		fmt.Println("Invalid operation")
 		return
 	}
-
 }
